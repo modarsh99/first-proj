@@ -1,166 +1,132 @@
 body{
-    background-color: #f2f2f2;
-    margin: 0px;
-}
-.contaner{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:repeat(4,auto);
-}
-.listjs{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right:0;
-    background-color: #11111149;
-    border-radius: 50px 0px 0px 50px ;
-    overflow-x: hidden;
-    transition: 0.5s;
-    
-
-}
-
-
-
-
-#remove{
-    color: #ffffff;
-    position: relative;
-    text-align: right;
-    right: 5px;
-    font-size: xx-large;
-    margin-right: 10px;
-    margin-top: 5px;
-}
-#list-items{
-    color: rgb(255, 255, 255);
-    position: relative;
-    text-align: center;
-    right: 5px;
-    font-size:large;
+    margin: 0px; 
 }
 .header{
+    padding: 0px;
+    margin: 0px;
+    display: block;
     position: relative;
-    background-color: red;
-    grid-column: 1/4;
+    background-image: url(bmw.jpg);
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    text-align: center;
+    background-origin: border-box;
+    overflow: hidden;
+}
+.top-bar-desktop{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 50px;
-    background-color: white;
-    transition: 0.5s;
 }
-#logo{
-    margin-top: 5px;
-    margin-left: 15px;
+#top-button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Modern Antiqua", serif;
+    width: 20%;
+    border:none ;
+    border-bottom:solid white 1px ;
+    border-radius: 0px;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
 }
-#lista{
+#top-button:hover{
+    background-color: rgba(255, 255, 255, 0.277);
+}
+.logo-bmw{
+    width: 100%;
+    color: wheat;
     position: absolute;
-    right: 0px;
-    background-color: rgba(255, 255, 255, 0);
-    border: solid rgba(255, 255, 255, 0);
-    width: 40px;
-    height: 40px;
-    font-size: xx-large;
-    margin-right: 10px;
-    margin-top: 5px;
+    bottom: 150px; 
 }
-.welcome-text{
-    text-align: center;
-    background-color: #f2f2f2;
-    grid-column: 1/4;
-    width: 100%;
-    height: 200px;
-}
-#text1{
-    font-size: 3rem;
-    color: #ec4668;
-    transition: 0.5s;
-}
-#text2{
-    font-size: 15px;
-    font-family: monospace;
-    transition: 0.5s;
-}
-.content{
-background-color: #f2f2f2;
-}
-.footer{
-    background-color: white;
-    grid-column: 1/4;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    font-size: 2rem;
-    color: #ec4668;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.content{
-    grid-column: 1/4;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: content;
-    justify-content: center;
-    flex-grow: inherit;
-    padding-top: 15px;
-}
-#users{
-    background-color: white;
-    position: relative;
-    width: 300px;
-    height: 450px;
-    margin: 10px;
-    border-radius: 40px;
-    text-align: center;
-    padding: 10px;
-    transition: 0.5s;
-}
-.photo{
-    position: relative;
-    width: 100%;
-    height: 60%;
-    background-image: url(Personal_photo.png);
-    background-size: cover;
+#logo-socilao{
+    display: inline;
+    background-image: url(Untitled\ design\ \(7\).png);
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
-    border-radius: 25%;
-
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 0px white;
+    border-radius: 50%;
 }
-.contet{
-    position: relative;
-    margin-top: 5px;
-    border-radius: 25%;
-    width: 100%;
-    height: 40%;
-    background-color: white;
-}
-#name{
-    position: relative;
-    display: block;
-    font-size: x-large;
-    width: 100%;
-    height: 30%;
-    color: #ec4668;
-    padding-top: 10px;
-    font-weight: 900;
-
-}
-#info{
-    position: relative;
-    display: block;
-    font-weight: 300;
-    width: 100%;
-    height: 40%;
+#logo-socilac{
+    display: none;
+    background-image: url(Untitled\ design\ \(7\).png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 0px white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px white;
 }
 .social{
-    position: relative;
-    display: block;
+    display: none;
+    position: absolute;
+    bottom: 20px;
     width: 100%;
-    height: 30%;
-    color: #ec4668;
-    font-size: 30px;
-    text-align: center;
+    color: white;
+    border: solid 0px;
+    text-shadow: 0px 0px 5px white;
 }
-#icon{
-    margin: 5px;
+.social-link{
+    font-size: 2rem;
+    width: calc(100% / 6);
+    animation: socialup;
+    translate:0px 0px ;
+    animation-duration: 2s;
+    animation-delay: 0.5;
+}
+@keyframes socialup{
+    0%{
+    translate: 0px 100px ;
+    }
+    50%{
+    translate: 0px -15px ;
+    }
+    100%{
+    translate: 0px 0px ;
+    animation-timing-function: ease-in-out;
+    }
+}
+@media (max-width: 400px){
+    #top-button{
+        font-size: 0.9rem;
+}
+
+.header{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    position: relative;
+    background-image: url(bmw.jpg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    text-align: center;
+    background-origin: border-box;
+    overflow: hidden;
+}
+.logo-bmw{
+    width: 100%;
+    color: wheat;
+    position: absolute;
+    bottom: 80px; 
+}
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
 }
