@@ -1,132 +1,341 @@
 body{
-    margin: 0px; 
+    margin: 0;
+    background-color: #ffffff;
 }
-.header{
-    padding: 0px;
-    margin: 0px;
-    display: block;
-    position: relative;
-    background-image: url(bmw.jpg);
-    height: 700px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-color: black;
-    text-align: center;
-    background-origin: border-box;
-    overflow: hidden;
+.mainpage{
+    background-color:#ffffff;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 900px auto;
+    
+    
 }
-.top-bar-desktop{
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 50px;
-}
-#top-button{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-size: 1.5rem;
-    font-family: "Modern Antiqua", serif;
-    width: 20%;
-    border:none ;
-    border-bottom:solid white 1px ;
-    border-radius: 0px;
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
-}
-#top-button:hover{
-    background-color: rgba(255, 255, 255, 0.277);
-}
-.logo-bmw{
-    width: 100%;
-    color: wheat;
-    position: absolute;
-    bottom: 150px; 
-}
-#logo-socilao{
-    display: inline;
-    background-image: url(Untitled\ design\ \(7\).png);
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 0px white;
-    border-radius: 50%;
-}
-#logo-socilac{
+.mobail-bar{
     display: none;
-    background-image: url(Untitled\ design\ \(7\).png);
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 0px white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px white;
 }
-.social{
-    display: none;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    color: white;
-    border: solid 0px;
-    text-shadow: 0px 0px 5px white;
+.mobile-list{
+position: absolute;
+z-index: 11;
+width: 100%;
+display: flex;
+flex-direction: column;
+font-size: x-large;
+justify-content: space-between;
+align-items: center;
+background: linear-gradient(90deg, rgba(85, 196, 139, 0.947), rgba(1, 133, 159, 0.93));
+padding-top: 25px;
+padding-bottom: 10px;
+border-radius:0px 0px 50px 50px;
+translate: 0px -1000px;
+padding-bottom: 25px;
+
+
 }
-.social-link{
+.mobile-list a{
+    text-decoration: none;
+    color:rgb(85, 196, 139) ;
     font-size: 2rem;
-    width: calc(100% / 6);
-    animation: socialup;
-    translate:0px 0px ;
-    animation-duration: 2s;
-    animation-delay: 0.5;
+    padding-top: 10px;
+    color: aliceblue;
 }
-@keyframes socialup{
-    0%{
-    translate: 0px 100px ;
-    }
-    50%{
-    translate: 0px -15px ;
-    }
-    100%{
-    translate: 0px 0px ;
-    animation-timing-function: ease-in-out;
-    }
+.mobile-list button{
+    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: whitesmoke;
+    box-shadow: 0px 0px 25px white;
 }
-@media (max-width: 400px){
-    #top-button{
-        font-size: 0.9rem;
+.social-mobile-list{
+    padding-top: 25px;
 }
+.mobail-bar-logo{
+background-image: url(DIV.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+#open-social{
+    background-color: red;
+    width: 80px;
+    height: 80px;    
+    position: fixed;
+    z-index: 12;
+    margin-top: 80px;
+    background-color: transparent;
+    font-size: 3rem;
+    color:  rgb(85, 196, 139);    
+    border: 0px;    
+    
+}
+.social-media-icon{
+    background-color: red;
+    width: 80px;
+    height: 500px;
+    position: fixed;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: transparent;
+    border: 0px;
+    translate: -100px 0px;
+    transition: 0.3s;
 
+    
+    
+}
+.social-media-icon button {
+    font-size: 3rem;
+    color:  rgb(85, 196, 139);    
+    border: 0px;
+    background-color: transparent;
+    margin-top: 20px;
+    transition: 0.5s;
+
+
+    
+}
+.social-media-icon button:hover {
+    scale: 1.5;
+    transition: 0.5s;
+
+    
+}
 .header{
-    padding: 0px;
-    margin: 0px;
-    display: block;
+    background-color:#ffffff;
     position: relative;
-    background-image: url(bmw.jpg);
-    height: 400px;
-    width: 100%;
+
+}
+#imggo{
+    background-image: url(slider-layer-1.webp);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    background-color: black;
-    text-align: center;
-    background-origin: border-box;
-    overflow: hidden;
-}
-.logo-bmw{
-    width: 100%;
-    color: wheat;
     position: absolute;
-    bottom: 80px; 
+    width: 80%;
+    height: 900px;
+    right: -250px;
 }
+.texto{
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+    font-size: 3rem;
+    display: block;
+    text-align: left;
 }
+.texto span{
+display: block;
+color:rgb(31, 33, 32) ; 
+}
+#bar{
+    background-color: white;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 0px 50px   rgb(85, 196, 139);
+    height: 70px;
+    margin-top: 70px;
+    width: 75%;
+    left: 10%;
+    border-radius:100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+#logo{    
+    width: 180PX;
+    height: 100px;
+    background-image: url(DIV.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 
+}
+#links{
+    background-color: rgba(0, 0, 255, 0);
+    font-size: 1.3rem;
+
+
+}
+#links button{
+    background-color: transparent;
+    border: 0px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+#links button:hover{
+    scale: 1.3;
+    transition: 0.3s;
+    color:  rgb(85, 196, 139);
+}
+#free-consultation{
+    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
+    width: 130px;
+    height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 650;
+    font-size: 1.1rem;
+}
+@media(max-width:970px){
+    .mainpage{
+    grid-template-rows:80px 750px auto;  
+    }
+    #imggo{
+    width: 100%;
+    height: 900px;
+    right: -150px;
+    }
+    #bar{
+        display: none;
+    }
+    .texto{
+        font-size: 1.6rem;
+        bottom: 50px;
+        left: 50px;
+    }   
+.mobail-bar{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.mobail-bar-logo{
+    position: absolute;
+    left: 10px;
+    width: 180px;
+    height: 60px;
+}
+.mobail-bar-free-consultation{
+    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
+    width: 180px;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 1px white solid;
+    color: whitesmoke;
+    outline: 0px;
+    transition: 0.3s;
+}
+.mobail-bar-free-consultation:hover{
+    scale: 1.2;
+    transition: 0.3s;
+}
+.mobail-bar-list-opean{
+    width: 60px;
+    position: absolute;
+    height: 60px;
+    right: 10px;
+    font-size: 2.3rem;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
+}
+#open-social{
+    display: none;
+
+}
+.social-media-icon{
+    display: none;
+}
+@media(max-width:700px){
+    .mobail-bar-free-consultation{
+        display: none;
+    }
+    #imggo{
+        width: 80%;
+        height: 900px;
+        right: 0px;
+        }
+    .mainpage{
+        grid-template-rows:80px 500px auto;  
+        }
+        .texto{
+        background-color: rgba(255, 0, 0, 0);
+        position: absolute;
+        left: 100px;
+        display: block;
+        text-align: center;
+
+        font-size: 1.6rem;
+        bottom: 25px;
+        }
+        #imggo{
+        background-image: url(slider-layer-1.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: 900px;
+            }
+        
+}
+}
 .content{
     background-color: rgb(255, 255, 255);
-    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#item1{
+    width: 400px;
+    height: 300px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
+    border-radius: 10px;
+    padding:10px;
+    color: #ffffff;
+}
+#item2{
+    background-color: #ffffff;
+    width: 400px;
+    height: 300px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px   rgb(85, 196, 139);
+    transition: 0.5s;
+    text-align: center;
+}
+#texa{
+height: 50%;
+text-align: center;
+transition: 0.5s;
+}
+#icon img{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+#item2:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px   rgb(85, 196, 139);
+}
+#item2:hover #icon{  
+    rotate: 360deg;
+    transition: 0.5s;
+}
+#bar-text1{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#bar-text2{
+    font-size: 1.1rem;
+    color: #555;
+
 }
