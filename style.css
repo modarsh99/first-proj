@@ -1,344 +1,187 @@
 body{
     margin: 0;
-    background-color: #ffffff;
 }
-.mainpage{
-    background-color:#ffffff;
+.contaner{
+    background-color: red;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 900px auto;
-    
-    
-}
-.mobail-bar{
-    display: none;
-}
-.mobile-list{
-position: absolute;
-z-index: 11;
-width: 100%;
-display: flex;
-flex-direction: column;
-font-size: x-large;
-justify-content: space-between;
-align-items: center;
-background: linear-gradient(90deg, rgba(85, 196, 139, 0.947), rgba(1, 133, 159, 0.93));
-padding-top: 25px;
-padding-bottom: 10px;
-border-radius:0px 0px 50px 50px;
-translate: 0px -1000px;
-padding-bottom: 25px;
-
-
-}
-.mobile-list a{
-    text-decoration: none;
-    color:rgb(85, 196, 139) ;
-    font-size: 2rem;
-    padding-top: 10px;
-    color: aliceblue;
-}
-.mobile-list button{
-    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
-    width: 60px;
-    height: 60px;
-    border: 0;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: whitesmoke;
-    box-shadow: 0px 0px 25px white;
-}
-.social-mobile-list{
-    padding-top: 25px;
-}
-.mobail-bar-logo{
-background-image: url(DIV.png);
-background-size: contain;
-background-repeat: no-repeat;
-}
-#open-social{
-    background-color: red;
-    width: 80px;
-    height: 80px;    
-    position: fixed;
-    z-index: 12;
-    margin-top: 80px;
-    background-color: transparent;
-    font-size: 3rem;
-    color:  rgb(85, 196, 139);    
-    border: 0px;    
-    
-}
-.social-media-icon{
-    background-color: red;
-    width: 80px;
-    height: 500px;
-    position: fixed;
-    z-index: 12;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    background-color: transparent;
-    border: 0px;
-    translate: -100px 0px;
-    transition: 0.3s;
-
-    
-    
-}
-.social-media-icon button {
-    font-size: 3rem;
-    color:  rgb(85, 196, 139);    
-    border: 0px;
-    background-color: transparent;
-    margin-top: 20px;
-    transition: 0.5s;
-
-
-    
-}
-.social-media-icon button:hover {
-    scale: 1.5;
-    transition: 0.5s;
-
-    
 }
 .header{
-    background-color:#ffffff;
+    background-color: rgb(243, 243, 243);
     position: relative;
-    overflow: hidden;
-
-
+    object-fit: contain;
+    
 }
-#imggo{
-    background-image: url(slider-layer-1.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 80%;
-    height: 900px;
-    right: -100px;
-}
-.texto{
+.nav-bar-mobile{
+    position: relative;
     background-color: rgba(255, 0, 0, 0);
-    position: absolute;
-    bottom: 150px;
-    left: 150px;
-    font-size: 3rem;
-    display: block;
-    text-align: left;
-}
-.texto span{
-display: block;
-color:rgb(31, 33, 32) ; 
-}
-#bar{
-    background-color: white;
-    display: flex;
-    position: relative;
-    box-shadow: 0px 0px 50px   rgb(85, 196, 139);
-    height: 70px;
-    margin-top: 70px;
-    width: 75%;
-    left: 10%;
-    border-radius:100px;
+    width: 100%;
+    display: none;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 25px;
+    height: 80px;
 }
-#logo{    
-    width: 180PX;
-    height: 100px;
-    background-image: url(DIV.png);
+.nav-bar-bomile-logo{
+    background-color: rgba(0, 0, 255, 0);
+    width: 180px;
+    position: absolute;
+    height: 70px;
+    margin-top: 5px;
+    left: 25px;
+    background-image: url(loogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.nav-bar-bomile-list{
+    position: absolute;
+    background-color: yellow;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 2rem;
+
+}
+.header-img img{
+    position: absolute;
+    right: -200px;
+
     
+}
+.nav-bar-desktop{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    border-radius: 60px;
+    left: 20%;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 0px 30px #55c48b;
+}
+.nav-bar-desktop-logo{
+    width: 180px;
+    height: 70px;
+    margin-left: 25px;
+    background-image: url(logo-biz.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
-#links{
-    background-color: rgba(0, 0, 255, 0);
-    font-size: 1.3rem;
-
-
-}
-#links button{
-    background-color: transparent;
-    border: 0px;
-    font-size: 1.3rem;
+.nav-bar-desktop-links button{
+    background-color: rgba(190, 190, 190, 0);
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 30px;
+    color: #000000;
     font-weight: 600;
     transition: 0.5s;
+
+
+
 }
-#links button:hover{
-    scale: 1.3;
-    transition: 0.3s;
-    color:  rgb(85, 196, 139);
+
+.nav-bar-desktop-links button:hover{
+    color: #55c48b;
+    scale: 1.4;
+    transition: 0.5s;
 }
-#free-consultation{
-    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
-    width: 130px;
+.nav-bar-desktopfc button{
+    background-color: rgb(190, 190, 190);
     height: 60px;
-    border-radius: 60px;
-    text-align: center;
-    color: whitesmoke;
-    font-weight: 650;
-    font-size: 1.1rem;
-}
-@media(max-width:970px){
-    .mainpage{
-    grid-template-rows:80px 750px auto;  
-    }
-    #imggo{
-    width: 100%;
-    height: 900px;
-    right: -150px;
-    }
-    #bar{
-        display: none;
-    }
-    .texto{
-        font-size: 1.6rem;
-        bottom: 50px;
-        left: 50px;
-    }   
-.mobail-bar{
-    display: flex;
-    background-color: rgba(255, 0, 0, 0);
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-.mobail-bar-logo{
-    position: absolute;
-    left: 10px;
-    width: 180px;
-    height: 60px;
-}
-.mobail-bar-free-consultation{
-    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
-    width: 180px;
-    height: 40px;
-    font-size: 1.1rem;
+    width: 150px;
+    font-size: 20px;
+    border: 0;
     border-radius: 30px;
-    border: 1px white solid;
+    background-image: linear-gradient(90deg,#55c48b,#01849f);
     color: whitesmoke;
-    outline: 0px;
-    transition: 0.3s;
-}
-.mobail-bar-free-consultation:hover{
-    scale: 1.2;
-    transition: 0.3s;
-}
-.mobail-bar-list-opean{
-    width: 60px;
-    position: absolute;
-    height: 60px;
-    right: 10px;
-    font-size: 2.3rem;
-    color: whitesmoke;
-    border: 0px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
-}
-#open-social{
-    display: none;
+    margin-right: 25px;
+    transition: 0.5s;
+
+
 
 }
-.social-media-icon{
-    display: none;
+.nav-bar-desktopfc button:hover{
+    scale: 1.3;
+    transition: 0.5s;
 }
-
-}
-@media(max-width:700px){
-    .mobail-bar-free-consultation{
-        display: none;
-    }
-    #imggo{
-        width: 80%;
-        height: 900px;
-        right: 0px;
-        }
-    .mainpage{
-        grid-template-rows:80px 500px auto;  
-        }
-        .texto{
-        background-color: rgba(255, 0, 0, 0);
+@media (max-width:1500px){
+    .nav-bar-desktop{
+        background-color: rgb(255, 255, 255);
         position: absolute;
-        left: 100px;
-        display: block;
-        text-align: center;
+        width: 70%;
+        height: 100px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-shadow: 0px 0px 30px #55c48b;
+    }
+    .nav-bar-desktopfc button{
+        display: none;
+    
+    
+    
+    }
+}
+@media (max-width:1050px){
+    .nav-bar-mobile{
+        display: flex;
+    }
+    .nav-bar-desktop{
+        display: none
+        ;
+    }
+    .header-img img{
+        width:100%;
+        right: 0px;
 
-        font-size: 1.6rem;
-        bottom: 25px;
-        }
-        #imggo{
-        background-image: url(slider-layer-1.webp);
+    }
+    .nav-bar-bomile-logo{
+        width: 160px;
+        left: 5px;
+        margin-top: 5px;
+        background-image: url(loogo.png);
+        background-position: left;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+
+}
+@media (max-width:450px){
+
+    
+    .nav-bar-bomile-list{
         position: absolute;
-        width: 100%;
-        height: 900px;
-            }
-        
+        background-color: yellow;
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+        right: 5px;
+    
+    }
+    .nav-bar-bomile-logo{
+        width: 160px;
+        left: 5px;
+        margin-top: 5px;
+        background-image: url(loogo.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 .content{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    background-color: yellow;
     
-}
-#item1{
-    width: 400px;
-    height: 300px;
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.4rem;
-    background: linear-gradient(90deg, rgb(85, 196, 139), rgb(1, 132, 159));
-    border-radius: 10px;
-    padding:10px;
-    color: #ffffff;
-}
-#item2{
-    background-color: #ffffff;
-    width: 400px;
-    height: 300px;
-    margin: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px   rgb(85, 196, 139);
-    transition: 0.5s;
-    text-align: center;
-}
-#texa{
-height: 50%;
-text-align: center;
-transition: 0.5s;
-}
-#icon img{
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
-}
-
-#item2:hover{
-    scale: 1.1;
-    transition: 0.5s;
-    box-shadow: 0px 0px 20px   rgb(85, 196, 139);
-}
-#item2:hover #icon{  
-    rotate: 360deg;
-    transition: 0.5s;
-}
-#bar-text1{
-    margin-top: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-}
-#bar-text2{
-    font-size: 1.1rem;
-    color: #555;
 
 }
